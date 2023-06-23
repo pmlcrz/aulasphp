@@ -1,0 +1,29 @@
+criar db: create database dbempresa
+
+exlcuir db: drop database dbempresa
+
+selecionar tabela: select * table tbcliente // where 1
+
+Alerar tabela: alter table
+
+Selecionar algo na tabela: select * from tbcliente
+
+
+Selecionar específico na tabela: select cliente, email from tbcliente where salario <700
+
+
+
+CREATE TABLE tbcliente (	
+    id int    
+    cliente varchar (60),    
+    email varchar (60),    
+    salario float (10,2),    
+    datacadastro date (30)
+);
+
+
+
+
+insert into tbcliente (id, cliente, email, salario, datacadastro) values 
+(1, 'Fulana', 'fulana@gmail.com', 9665.65, '2022-08-06')
+
