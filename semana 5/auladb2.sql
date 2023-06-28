@@ -2,10 +2,10 @@
 /*
 cria o banco de dados: create database databasename
 */
-CREATE DATABASE BDSENAC;
+CREATE DATABASE dbSENAC;
 
 /* Ligar o banco de dados */
-use bdsenac;
+use dbsenac;
 
 create table pessoa (
   id int not null auto_increment,
