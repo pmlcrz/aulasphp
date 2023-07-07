@@ -14,11 +14,21 @@ $qry = mysqli_query($con,$sql);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela listar alunos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 </head>
 <body>
-    <h1>Deletar registros</h1>
-    <a href="formcadaluno.php"> Novo cadastro</a>
-    <table border="1px">
+
+    <?php 
+    include "menu.php"; 
+    ?> 
+
+
+    <div class="container">
+
+    <h1>Registros</h1>
+    <a href="formcadaluno.php" class="btn btn-success"> Novo cadastro</a>
+    <table class="table">
         <tr>
             <th>id</th>
             <th>Aluno</th>
@@ -31,7 +41,7 @@ $qry = mysqli_query($con,$sql);
         
         while ($linha = mysqli_fetch_array($qry)) {
            $id = $linha ['id'];
-           echo "<td>".$linha['id']."</td>";
+           echo "<td>".$linha['id']."</t d>";
            echo "<td>".$linha['aluno']."</td>";
            echo "<td>".$linha['turma']."</td>";
            echo "<td>".$linha['mensalidade']."</td>";
@@ -43,5 +53,7 @@ $qry = mysqli_query($con,$sql);
         ?>
     
     </table>
+    </div>
+    
 </body>
 </html>
