@@ -40,9 +40,11 @@ if (isset($_GET["id"])) {
             $row = mysqli_fetch_assoc($result);
             ?>
 
-            <!DOCTYPE html>
-            <html>
-            <head>
+         <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Editar Entrega</title>
             </head>
             <body>
