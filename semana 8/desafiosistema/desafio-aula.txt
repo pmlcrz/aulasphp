@@ -1,9 +1,0 @@
-
-DESAFIO AULA 17-07-2023
-
-
-- Criar um sistema simples mesmo que faça o controle de entregas de açaí para clientes cadastrados. 
-- O sistema deve ter o registro de envio utilizando a ideia de que uma pessoas vai enviar para outra. 
-- O sistema tem que fazer o cadastro, a listagem e a exclusão. 
-- Colocar para fazer uma busca específica e também poder indicar o status da entrega.
-
