@@ -1,14 +1,11 @@
 <?php
 
-//nome da classe
 class ContaCorrente {
-    //atributos da classe
     public $titular;
     public $nConta;
     public $saldo;
     public $lis;
 
-//métodos da classe
     function __construct($titular, $nConta, $saldo, $lis="não"){
         $this->titular = $titular;
         $this->nConta = $nConta;
@@ -25,20 +22,16 @@ class ContaCorrente {
             echo "🚫 saldo insuficiente<br>";
         }
 
-
-        //return "Executou o sacar na conta corrente<br>";
     }
 
     public function depositar($valor){
 
         $this->saldo = $this->saldo + $valor;
 
-        //return "Depositou o dinheiro na conta corrente<br>";
     }
 
     public function transferir(){
 
-        //return "Transferiu o dinheiro da conta corrente<br>";
     }
 
     public function exibirSaldo(){
