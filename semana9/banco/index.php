@@ -8,12 +8,8 @@
 </head>
 <body>
     <?php
-        //o cliente vai receber o objeto que é a conta corrente
         require 'ContaCorrente.class.php';
-       // método construtor:
-       // $cliente1 = new ContaCorrente("Pamela", 456, 600.00);
-        //$cliente1->$cliente1.$this->titular
-
+     
         $cliente1 = new ContaCorrente("Pamela", 123, 600.00, "sim");
         $cliente2 = new ContaCorrente("Thomas", 456, 290.00, "não");
 
@@ -27,15 +23,6 @@
         $cliente2->sacar(1590);
 
 
-
-
-        //$cliente2 = new ContaCorrente();
-        //$cliente2->$titular = 'Thomas';
-
-        //echo $cliente1->sacar();
-        //echo $cliente2->depositar();
-        //echo $cliente3->transferir();
-        //echo $cliente4->exibirSaldo();
     ?>
 </body>
 </html>
