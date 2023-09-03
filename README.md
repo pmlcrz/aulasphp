@@ -1,2 +1,2 @@
 # aulasphp
-Arquivos das aulas de PHP
+Arquivos das aulas do curso de especialização em PHP.
